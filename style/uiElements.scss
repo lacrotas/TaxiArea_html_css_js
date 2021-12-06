@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+main{
+    position: relative;
+    top: 70px;
+}
+input{
+    border-radius: 8px;
+    border: 1px solid rgb(170, 152, 152);
+    &:hover{
+       border: 1px solid #00639A;
+    }
+}
+ button{ //при объявлении в html button div__button в div__button описыываем позиционирование
+    border-radius: 8px;
+}

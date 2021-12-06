@@ -1,0 +1,42 @@
+.main__container--left {
+  float: left;
+  background-color: #48758E;
+  width: 25%;
+  margin-left: calc(40% - 200px);
+  margin-top: 170px;
+}
+
+.main__container--left .main__image {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.main__container--left .main__button {
+  margin-top: 20px;
+  font-size: 25px;
+  display: block;
+}
+
+.main__form--right {
+  float: right;
+  width: 35%;
+  height: 100%;
+  background-color: #F8F1E5;
+}
+
+.main__form--right .main__input {
+  width: 90%;
+  margin-left: 5%;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.main__form--right .main__button {
+  width: 70%;
+  margin-left: 15%;
+  font-size: 15px;
+  height: 80px;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=personalOffise.css.map */

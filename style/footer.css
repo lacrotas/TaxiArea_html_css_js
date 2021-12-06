@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  margin-top: 70px;
+  height: 300px;
+  background-color: #7091A4;
+}
+
+.footer .footer__text {
+  text-align: center;
+  font-size: 36px;
+  padding: 10px;
+  margin: 0;
+}
+
+.footer .footer__partner {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.footer .footer__partner img {
+  width: 12%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.footer .footer__copurate {
+  margin-top: 20px;
+  margin-left: calc(50% - 203px);
+}
+
+.footer .footer__copurate img {
+  width: 48px;
+  height: 48px;
+}
+
+.footer .footer__copurate h4, .footer .footer__copurate p {
+  position: relative;
+  top: -15px;
+  font-size: 24px;
+  display: inline;
+}
+/*# sourceMappingURL=footer.css.map */

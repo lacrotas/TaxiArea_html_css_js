@@ -1,0 +1,318 @@
+@import uiElements.scss
+@import header.scss
+@import load.scss
+@import personalOffise.scss
+.main__order
+    position: relative
+    width: 100%
+    height: 880px
+    .main__map
+        position: absolute
+        width: 100%
+        height: 100%
+    .main__form
+        position: relative
+        z-index: 5
+        float: right
+        background-color: rgba(145, 180, 199,0.7 )
+        width: 470px
+        height: 400px
+        margin: 30px
+        border-radius: 9px
+        .main__checkbox
+            width: 90%
+            margin-left: 5%
+            margin-top: 20px 
+            display: flex
+            justify-content: space-between
+            div
+                width: 130px 
+                height: 130px
+                background-color:#fff
+                border-radius: 15px
+                text-align: center
+                cursor: pointer
+                &:hover
+                    background-color:#eee
+                &:active
+                    background-color: #ccc
+            .main__comfort
+                    background-image: url("../image/icon/car2.png")
+                    background-repeat: no-repeat
+                    background-position-x: 12px
+                    background-position-y: -15px
+                    p
+                        font-size: 20px
+                        &:first-child
+                            margin-top: 60px 
+                         
+            .main__econom
+                    background-image: url("../image/icon/car1.png")
+                    background-repeat: no-repeat
+                    background-position-x: 12px
+                    background-position-y: -15px
+                    p
+                        font-size: 20px
+                        &:first-child
+                            margin-top: 60px 
+                          
+            .main__lux
+                    background-image: url("../image/icon/car3.png")
+                    background-repeat: no-repeat
+                    background-position-x: 12px
+                    background-position-y: -15px
+                    p
+                        font-size: 20px
+                        &:first-child
+                            margin-top: 60px 
+
+                             
+        .main__input,.main__button
+            box-sizing: border-box
+            width: 90%
+            margin-left: 5%
+            margin-top: 20px 
+            height: 54px
+            &:first-child
+                margin-top: 30px 
+    .main__anchor
+        border-radius: 9px 
+        position: relative
+        top: 30px
+        left: calc(50% - 87px)
+        font-size: 20px
+        padding: 10px
+        background-color:  rgba(145, 180, 199,0.7 )
+.traffic
+    width: 100%
+    height: 800px
+    background-image: url("../image/traffic.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    .traffic-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .traffic-content
+        width: 100%
+        height: 100%
+        .traffic-content-city
+            float: left 
+            margin: 30px
+            margin-top: 200px 
+            width: 40%
+            height: 400px
+            background-color: rgba(145, 180, 199,0.7 )
+            text-align: center
+            border-radius: 10px 
+            h3
+                font-size: 36px
+                padding: 10px
+                margin: 0px
+                color: #fff
+        .traffic-content-cityfrom
+            margin-right: 30px
+            margin-top: 50px 
+            float: right
+            width: 40%
+            height: 400px
+            background-color: rgba(145, 180, 199,0.7 )
+            text-align: center
+            border-radius: 10px 
+            h3
+                font-size: 36px
+                padding: 10px
+                margin: 0px
+                color: #fff
+        table
+            margin-left: 5% 
+            width: 90%
+            height: 300px
+            background-color: #FFFFFF
+            font-size: 30px
+            border-collapse: collapse
+            border-radius: 10px
+            tr
+                border-bottom: 1pt solid #9EBBCB
+.work
+    width: 100%
+    height: 800px
+    background-image: url("../image/work.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    .work-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .work-content
+        width: 100%
+        height: 100%
+        margin-top: 50px 
+        .work-content-adventuries
+            float: left
+            margin-left: 20px
+            width: 50%
+            height: 500px
+            text-align: center
+            div
+                float: left
+            h2
+              color: white
+              margin: 0s
+              font-size: 48px
+              border-bottom: 5px solid #fff
+            h3
+              color: white
+              position: relative
+              top: -46px
+              font-size: 48px
+              display: inline   
+        .work-content-form
+            float: right
+            width: 40%
+            height: 500px
+            margin-right: 20px
+            text-align: center
+            h2
+                font-size: 48px
+                color: #fff
+            form 
+                border-radius: 15px 
+                height: 400px
+                background-color: rgba(145, 180, 199,0.9 )
+                button
+                    width: 50%
+                    height: 80px
+                    margin-top: 20px
+                    border-radius: 10px 
+                input
+                        width: 90%
+                        margin-left: 1%
+                        box-sizing: border-box
+                        border-radius: 10px 
+                        margin-top: 20px 
+                        height: 70px
+.review
+    width: 100%
+    height: 600px
+    background-image: url("../image/review.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    .review-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .review-content
+        width: 100%
+        height: 100%
+       
+        .slider-prev
+            position: relative
+            float: left
+            top: -250px
+        .slider-next
+            position: relative
+            float: right
+            top: -250px
+        .slider
+            margin-top: 40px 
+            margin-left: 150px 
+            width: calc(100% - 300px)
+            overflow: hidden
+            .slider-line
+                width: 200%
+                display: flex
+                position: relative
+                transition: all ease 1s
+                .slider-line-item
+                    border-radius: 10px 
+                    margin: 20px 
+                    width: 30%
+                    background-color: rgba(72, 117, 142 ,0.7 )
+                    .user
+                        margin: 10px
+                        img
+                            width: 40%
+                        h2
+                            position: relative
+                            font-size: 30px 
+                            top: -70px
+                            margin-left: 5%
+                            display: inline
+                        .stars
+                            position: relative
+                            top: -50px
+                            margin-left: 46%
+                            display: inline-block
+                            width: 50%
+                            img
+                                width: 17%
+                    p
+                        margin: 10px
+                        padding: 10px
+                        border-radius: 10px  
+                        font-size: 30px
+                        background-color: rgba(201, 217, 225 ,0.7 )
+.contacts
+    width: 100%
+    height: 520px
+    background-image: url("../image/contact.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    .contacts-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .contacts-content
+        width: 90%
+        height: calc(100% - 190px)
+        margin-top: 40px
+        margin-left: calc(5% - 20px)
+        padding: 20px 
+        background-color: rgba(173, 195, 207 ,0.7 )
+        border-radius: 10px
+        .contacts-content-text-right
+            float: right
+            width: 50%
+            p
+                float: right
+                margin-top: 5%
+                font-size: 40px
+                color: #fff
+            .social
+                display: inline-block
+                float: right
+                img
+                    width: 20%
+        .contacts-content-text-left
+            float: left
+            width: 50%
+            p
+                margin-top: 5%
+                font-size: 40px
+                color: #fff
+@import footer.scss

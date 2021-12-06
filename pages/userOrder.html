@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__flexbox">
+            <div class="header__logo--left">
+                <img class="header__image" src="../image/icon/logo.png" width="62px" height="62px" alt="logo"/>
+                <h2 class="header__text" onclick="gotoPage('../index.html')">Taxeria</h2>
+            </div>
+            <nav class="header__navigation">
+                <a href="#main" class="header__anchor">Главная</a>
+                <a href="#traffic" class="header__anchor">Тарифы</a>
+                <a href="#work" class="header__anchor">Работа</a>
+                <a href="#review" class="header__anchor">Отзывы</a>
+                <a href="#contacts" class="header__anchor">Контакты</a>
+            </nav>
+            <div class="header__authorization-active">
+              <button class="header__button" onclick="authorization()">Войти</button>
+            </div>
+            <div class="header__authorization-disable">
+              <p class="header__paragraph">Имя пользователя</p>
+              <button class="header__button" onclick="authorization()">Выйти</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+       <div class="main__load">
+           <div class="main__container">
+           <img class="main__image" src="../image/icon/load.png" alt="loading" />
+           <h2 class="main_text">Ожидание заказа</h2>
+           </div>      
+       </div>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__text">Наши партнеры</h2>
+      <div class="footer__partner">
+        <img src="../image/footer/partner1.png"/>
+        <img src="../image/footer/partner2.png"/>
+        <img src="../image/footer/partner3.png"/>
+        <img src="../image/footer/partner4.png"/>
+      </div>
+     <div class="footer__copurate">
+       <img src="../image/icon/logo.png"/>
+       <h4>Taxirea</h4>
+       <p>© ООО «Такси Лайм» 2021</p>
+     </div>
+    </footer>
+    <script src="../scrips/script.js"></script>
+</body>
+</html>

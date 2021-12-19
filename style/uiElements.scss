@@ -1,9 +1,28 @@
+$divBackgroundColor: #91B4C7;
+$divHeaderColor: #48758E;
+$navBarHover: #95C8E3;
+
+$h1FontFamily:'Marko One', serif;
+$textFontFamily:'Roboto', sans-serif;
+$fontColorLight: #fff;
+$fontColorDark: #000;
+
+$buttonColor:#FFFFFF;
+$buttonHover:#EEEEEE;
+$buttonClick:#CCCCCC;
+
+$inputBorder:#000000;
+$inputHoverBorder:#00639A;
+$inputClickBorder: #48758E;
+$inputErrorButtonColor: #FF8F8F; 
+
 body{
     margin: 0;
 }
 main{
     position: relative;
     top: 70px;
+    overflow: hidden;
 }
 input{
     border-radius: 8px;
@@ -12,6 +31,6 @@ input{
        border: 1px solid #00639A;
     }
 }
- button{ //при объявлении в html button div__button в div__button описыываем позиционирование
+ button{
     border-radius: 8px;
 }

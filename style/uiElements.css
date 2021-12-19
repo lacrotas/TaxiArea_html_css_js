@@ -5,6 +5,7 @@ body {
 main {
   position: relative;
   top: 70px;
+  overflow: hidden;
 }
 
 input {

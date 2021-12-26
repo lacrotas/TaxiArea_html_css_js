@@ -75,10 +75,10 @@
 
         <form class="modal-window__registration" action="../index.html">
           <h2 class="modal-window__label">Регистрация</h2>
-          <input class="input modal-window__input---name" type="text" placeholder="Логин" />
-          <input class="input modal-window__input--password" type="password" placeholder="Пароль"/>
+          <input class="input modal-window__input---name" id="userName" type="text" placeholder="Логин" />
+          <input class="input modal-window__input--password" id="userPass" type="password" placeholder="Пароль"/>
           <input class="input modal-window__input--password" type="password" placeholder="Повторите пароль"/>
-          <button class="button modal-window__button--registration" onclick="logIn()" type="submit">Зарегистрироваться</button>
+          <button class="button modal-window__button--registration" onclick="registrate()" type="button">Зарегистрироваться</button>
           <button class="button modal-window__button--login" type="button" onclick="changeForm()">Войти</button>
         </form>
       </div>

@@ -9,6 +9,7 @@ function logIn(){
         checkUser=true;
         localStorage.setItem('userName', users[i].name);
         authorization();
+        document.location.href = "../index.html";
         break;
         }
     }
@@ -18,8 +19,8 @@ function logIn(){
 }
 
 function registrate(){
-    const loginInput = document.querySelector('.modal-window__input---name');
-    const passwordInput = document.querySelector('.modal-window__input--password');
+    const loginInput = document.querySelector('#userName');
+    const passwordInput = document.querySelector('#userPass');
     //loading
     let users = JSON.parse(localStorage.getItem('userData') || "[]");
     let user = {
@@ -28,6 +29,7 @@ function registrate(){
         };
     users.push(user);
     localStorage.setItem('userData', JSON.stringify(users));
+    // localStorage.setItem('userName', user.name);
 }
 
 /* change header*/

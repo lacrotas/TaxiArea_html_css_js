@@ -1,15 +1,15 @@
-let authorized=false;
+let authorizedCheck=false;
 function changeForm(){
   const authorizationForm = document.querySelector('.modal-window__authorization')
   const registrationForm = document.querySelector('.modal-window__registration')
-  if(authorized){
+  if(authorizedCheck){
     authorizationForm.style.display ='none';
     registrationForm.style.display = 'block';
-    authorized=false;
+    authorizedCheck=false;
    }else{
     authorizationForm.style.display ='block';
     registrationForm.style.display = 'none';
-    authorized=true;
+    authorizedCheck=true;
    }
 }
 function gotoPage(hrefName){

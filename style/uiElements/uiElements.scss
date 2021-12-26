@@ -18,6 +18,7 @@ $inputErrorButtonColor: #FF8F8F;
 
 body{
     margin: 0;
+    background-color: #95C8E3;
 }
 main{
     position: relative;
@@ -25,12 +26,23 @@ main{
     overflow: hidden;
 }
 input{
-    border-radius: 8px;
-    border: 1px solid rgb(170, 152, 152);
+    border-radius: 10px;
+    border: 2px solid #000000;
     &:hover{
-       border: 1px solid #00639A;
+       border: 2px solid #00639A;
+    }
+    &:focus{
+        border: 2px solid #48758E;
     }
 }
  button{
-    border-radius: 8px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #000000;
+    &:hover{
+        background-color: #EEEEEE;
+     }
+     &:focus{
+        background-color: #CCCCCC;
+     }
 }

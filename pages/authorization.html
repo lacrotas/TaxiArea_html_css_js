@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__flexbox">
+          <div class="header__logo--left">
+            <img
+              class="header__image"
+              src="../image/icon/logo.png"
+              width="62px"
+              height="62px"
+              alt="logo"
+            />
+            <h2 class="header__label">Taxeria</h2>
+          </div>
+          <nav class="header__navigation">
+            <a href="../index.html#main" class="header__anchor">Главная</a>
+            <a href="../index.html#traffic" class="header__anchor">Тарифы</a>
+            <a href="../index.html#work" class="header__anchor">Работа</a>
+            <a href="../index.html#review" class="header__anchor">Отзывы</a>
+            <a href="../index.html#contacts" class="header__anchor">Контакты</a>
+          </nav>
+          <div class="header__navigationSelect">
+            <img
+              class="header__selectButton"
+              src="../image/icon/navbar.png"
+              onclick="hideSelect()"
+            />
+          </div>
+          <div class="header__authorization-active">
+            <button class="header__button">
+              Войти
+            </button>
+          </div>
+          <div class="header__authorization-disable">
+            <p
+              class="header__paragraph"
+              id="p1"
+              onclick="gotoPage('./personalOffise.html')"
+            >
+              Имя пользователя
+            </p>
+            <button class="header__button" onclick="logOut()">
+              Выйти
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+      <div class="main__navbar--hidden">
+        <a href="#main" class="main__anchor">Главная</a>
+        <a href="#traffic" class="main__anchor">Тарифы</a>
+        <a href="#work" class="main__anchor">Работа</a>
+        <a href="#review" class="main__anchor">Отзывы</a>
+        <a href="#contacts" class="main__anchor">Контакты</a>
+        <a href="./personalOffise.html" id="user-name"> Maks </a>
+      </div>
+    </main>
+    <div class="modal-window">
+        <form class="modal-window__authorization" action="../index.html">
+          <h2 class="modal-window__label">Авторизация</h2>
+          <input class="input modal-window__input---name" name="login" type="text" placeholder="Логин" />
+          <input class="input modal-window__input--password" type="password" placeholder="Пароль"/>
+          <button class="button modal-window__button--login" onclick="logIn()" type="button">Вход</button>
+          <a class="modal-window__paragraph">Забыли пароль?</a>
+          <button class="button modal-window__button--registration" type="button" onclick="changeForm()">Регистрация</button>
+        </form>
+
+        <form class="modal-window__registration" action="../index.html">
+          <h2 class="modal-window__label">Регистрация</h2>
+          <input class="input modal-window__input---name" type="text" placeholder="Логин" />
+          <input class="input modal-window__input--password" type="password" placeholder="Пароль"/>
+          <input class="input modal-window__input--password" type="password" placeholder="Повторите пароль"/>
+          <button class="button modal-window__button--registration" onclick="logIn()" type="submit">Зарегистрироваться</button>
+          <button class="button modal-window__button--login" type="button" onclick="changeForm()">Войти</button>
+        </form>
+      </div>
+      <script src="../scrips/script.js"></script>
+      <script src="../scrips/autorizate.js"></script>
+</body>
+</html>

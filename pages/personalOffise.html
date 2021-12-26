@@ -21,16 +21,31 @@
                 <a href="../index.html#review" class="header__anchor">Отзывы</a>
                 <a href="../index.html#contacts" class="header__anchor">Контакты</a>
             </nav>
+            <div class="header__navigationSelect">
+              <img
+                class="header__selectButton"
+                src="../image/icon/navbar.png"
+                onclick="hideSelect()"
+              />
+            </div>
             <div class="header__authorization-active">
-              <button class="header__button" onclick="authorization()">Войти</button>
+              <button class="header__button"  onclick="gotoPage('../pages/authorization.html')">Войти</button>
             </div>
             <div class="header__authorization-disable">
-              <p class="header__paragraph">Имя пользователя</p>
-              <button class="header__button" onclick="authorization()">Выйти</button>
+              <p class="header__paragraph" id="p1">Имя пользователя</p>
+              <button class="header__button" onclick="logOut()">Выйти</button>
             </div>
         </div>
     </header>
     <main class="main">
+      <div class="main__navbar--hidden">
+        <a href="#main" class="main__anchor">Главная</a>
+        <a href="#traffic" class="main__anchor">Тарифы</a>
+        <a href="#work" class="main__anchor">Работа</a>
+        <a href="#review" class="main__anchor">Отзывы</a>
+        <a href="#contacts" class="main__anchor">Контакты</a>
+        <a href="./personalOffise.html" id="user-name"> Maks </a>
+      </div>
        <div class="main__load">
            <div class="main__container--left">
            <img class="main__image" src="../image/icon/userAccount.png" alt="userAccount" />
@@ -60,5 +75,6 @@
      </div>
     </footer>
     <script src="../scrips/script.js"></script>
+    <script src="../scrips/autorizate.js"></script>
 </body>
 </html>

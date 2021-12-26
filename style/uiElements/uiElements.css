@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background-color: #95C8E3;
+}
+
+main {
+  position: relative;
+  top: 70px;
+  overflow: hidden;
+}
+
+input {
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+
+input:hover {
+  border: 2px solid #00639A;
+}
+
+input:focus {
+  border: 2px solid #48758E;
+}
+
+button {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid #000000;
+}
+
+button:hover {
+  background-color: #EEEEEE;
+}
+
+button:focus {
+  background-color: #CCCCCC;
+}
+/*# sourceMappingURL=uiElements.css.map */

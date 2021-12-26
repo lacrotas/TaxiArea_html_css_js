@@ -18,7 +18,7 @@
             height="62px"
             alt="logo"
           />
-          <h2 class="header__text">Taxeria</h2>
+          <h2 class="header__label">Taxeria</h2>
         </div>
         <nav class="header__navigation">
           <a href="#main" class="header__anchor">Главная</a>
@@ -35,12 +35,13 @@
           />
         </div>
         <div class="header__authorization-active">
-          <button class="header__button" onclick="authorization()">
+          <button class="header__button" onclick="gotoPage('./pages/authorization.html')">
             Войти
           </button>
         </div>
         <div class="header__authorization-disable">
           <p
+            id="p1"
             class="header__paragraph"
             onclick="gotoPage('./pages/personalOffise.html')"
           >
@@ -365,5 +366,6 @@
     </footer>
     <script src="./scrips/script.js"></script>
     <script src="./scrips/slider.js"></script>
+    <script src="./scrips/autorizate.js"></script>
   </body>
 </html>

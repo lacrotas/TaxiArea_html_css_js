@@ -1,18 +1,43 @@
-const userHeaderActive = document.querySelector('.header__authorization-active')
-const userHeaderDisable = document.querySelector('.header__authorization-disable')
-let authorized=false;
-
- function authorization(){
-   if(authorized){
-    userHeaderDisable.style.display ='none';
-    userHeaderActive.style.display = 'block';
+function changeForm(){
+  const authorizationForm = document.querySelector('.modal-window__authorization')
+  const registrationForm = document.querySelector('.modal-window__registration')
+  if(authorized){
+    authorizationForm.style.display ='none';
+    registrationForm.style.display = 'block';
     authorized=false;
    }else{
-   userHeaderDisable.style.display ='block';
-   userHeaderActive.style.display = 'none';
-   authorized=true;
+    authorizationForm.style.display ='block';
+    registrationForm.style.display = 'none';
+    authorized=true;
    }
 }
 function gotoPage(hrefName){
   document.location.href = hrefName;
+}
+/* menu */
+let hiddenCheck=false;
+let selectCheck=false;
+function hideForm(){
+  const form = document.querySelector('.main__form')//form
+  
+  if(!hiddenCheck){
+   form.style.top = 760+'px';
+     hiddenCheck=true;
+   }else{
+     form.style.top = 390+'px';
+     hiddenCheck=false;
+   }
+   console.log("sadd");
+}
+function hideSelect(){
+  const selectForm = document.querySelector('.main__navbar--hidden');
+ 
+ if(!selectCheck){
+   selectForm.style.left = -200 +'px';
+  selectCheck=true;
+  }else{
+   selectForm.style.left = 0+'px';
+    selectCheck=false;
+  }
+  console.log("sad");
 }

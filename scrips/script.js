@@ -1,3 +1,4 @@
+let authorized=false;
 function changeForm(){
   const authorizationForm = document.querySelector('.modal-window__authorization')
   const registrationForm = document.querySelector('.modal-window__registration')

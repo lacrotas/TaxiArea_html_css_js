@@ -1,19 +1,9 @@
-let authorizedCheck=false;
-function changeForm(){
-  const authorizationForm = document.querySelector('.modal-window__authorization')
-  const registrationForm = document.querySelector('.modal-window__registration')
-  if(authorizedCheck){
-    authorizationForm.style.display ='none';
-    registrationForm.style.display = 'block';
-    authorizedCheck=false;
-   }else{
-    authorizationForm.style.display ='block';
-    registrationForm.style.display = 'none';
-    authorizedCheck=true;
-   }
-}
+
 function gotoPage(hrefName){
   document.location.href = hrefName;
+  if(localStorage.getItem('activeRole')==''){
+    document.location.href ='./pages/authorization.html';
+  }
 }
 /* menu */
 let hiddenCheck=false;
@@ -40,5 +30,4 @@ function hideSelect(){
    selectForm.style.left = 0+'px';
     selectCheck=false;
   }
-  console.log("sad");
 }

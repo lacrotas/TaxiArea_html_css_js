@@ -61,7 +61,6 @@
 }
 
 .modal-window {
-  text-align: center;
   position: absolute;
   z-index: 20;
   margin-left: calc(50% - 175px);
@@ -70,5 +69,6 @@
   height: 400px;
   background-color: #deedf1;
   border: 1px solid black;
+  text-align: center;
 }
 /*# sourceMappingURL=modalWindow.css.map */

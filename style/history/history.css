@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.modal-window__mark {
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 20;
+  margin-left: calc(50% - 200px);
+  top: calc(50% - 235px);
+  background-color: #deedf1;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.modal-window__mark .modal-window__textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  margin-left: 3%;
+  height: 150px;
+}
+
+.modal-window__mark .modal-window__button {
+  margin-top: 20px;
+  width: 70%;
+  height: 50px;
+}
+
+.modal-window__mark .rating-area {
+  overflow: hidden;
+  width: 75%;
+}
+
+.modal-window__mark .rating-area:not(:checked) > input {
+  display: none;
+}
+
+.modal-window__mark .rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.modal-window__mark .rating-area:not(:checked) > label:before {
+  content: '★';
+}
+
+.modal-window__mark .rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.modal-window__mark .rating-area:not(:checked) > label:hover,
+.modal-window__mark .rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.modal-window__mark .rating-area > input:checked + label:hover,
+.modal-window__mark .rating-area > input:checked + label:hover ~ label,
+.modal-window__mark .rating-area > input:checked ~ label:hover,
+.modal-window__mark .rating-area > input:checked ~ label:hover ~ label,
+.modal-window__mark .rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.modal-window__mark .rate-area > label:active {
+  position: relative;
+}
+/*# sourceMappingURL=history.css.map */

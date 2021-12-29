@@ -27,13 +27,6 @@
           <a href="#review" class="header__anchor">Отзывы</a>
           <a href="#contacts" class="header__anchor">Контакты</a>
         </nav>
-        <div class="header__navigationSelect">
-          <img
-            class="header__selectButton"
-            src="image/icon/navbar.png"
-            onclick="hideSelect()"
-          />
-        </div>
         <div class="header__authorization-active">
           <button class="header__button" onclick="gotoPage('./pages/authorization.html')">
             Войти
@@ -47,9 +40,30 @@
           >
             Имя пользователя
           </p>
-          <button class="header__button" onclick="authorization()">
+          <button class="header__button" onclick="logOut()">
             Выйти
           </button>
+        </div>
+      </div>
+    </header>
+    <header class="header-small">
+      <div class="header__flexbox">
+        <div class="header__logo--left">
+          <img
+            class="header__image"
+            src="./image/icon/logo.png"
+            width="62px"
+            height="62px"
+            alt="logo"
+          />
+          <h2 class="header__label">Taxeria</h2>
+        </div>
+        <div class="header__navigationSelect">
+          <img
+            class="header__selectButton"
+            src="image/icon/navbar.png"
+            onclick="hideSelect()"
+          />
         </div>
       </div>
     </header>
@@ -72,7 +86,7 @@
           allowfullscreen=""
           loading="lazy"
         ></iframe>
-        <a class="main__anchor" name="main">История поездок</a>
+        <a class="main__anchor" name="main" href="./pages/history.html">История поездок</a>
         <form class="main__form" action="./pages/userOrder.html">
           <img
             class="main__button--disable"
@@ -105,6 +119,42 @@
           </div>
           <button class="main__button" type="submit">Оформить заказ</button>
         </form>
+      </section>
+      <section class="main__admin">
+       <div class="table admin_table">
+        <table class="main-history__table--content">
+          <tr>
+            <th>Номер</th>
+            <th>Дата</th>
+            <th>Водитель</th>
+            <th>Оценка</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>12.10.2010</td>
+            <td>Сергей</td>
+            <td onclick="openModal()">Нет</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10.11.2015</td>
+            <td>Александр</td>
+            <td onclick="openModal()">4/5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>11.01.2017</td>
+            <td>Глеб</td>
+            <td  onclick="openModal()">4/5</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>24.02.2018</td>
+            <td>Евгений</td>
+            <td  onclick="openModal()">3/5</td>
+          </tr>
+        </table>
+       </div>
       </section>
       <section class="traffic">
         <div class="traffic-header">
@@ -194,10 +244,10 @@
           <div class="work-content-form">
             <h2>Оставьте ваше заявление</h2>
             <form>
-              <input type="text" placeholder="ФИО..." />
-              <input type="number" placeholder="Номер телефона..." />
-              <input type="text" placeholder="Марка авто, кузов, цвет..." />
-              <button>Подать заявление</button>
+              <input class="work-content__input--name" id="driver-name" type="text" placeholder="ФИО..." />
+              <input class="work-content__input--number" id="driver-number" type="number" placeholder="Номер телефона..." />
+              <input class="work-content__input--car" id="driver-car" type="text" placeholder="Марка авто, кузов, цвет..." />
+              <button onclick="driverRegistrate()">Подать заявление</button>
             </form>
           </div>
         </div>
@@ -367,5 +417,6 @@
     <script src="./scrips/script.js"></script>
     <script src="./scrips/slider.js"></script>
     <script src="./scrips/autorizate.js"></script>
+    <script src="./scrips/pagesChange.js"></script>
   </body>
 </html>

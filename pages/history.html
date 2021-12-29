@@ -67,27 +67,6 @@
       </div>
     </div>
   </header>
-  <header class="header-small">
-    <div class="header__flexbox">
-      <div class="header__logo--left">
-        <img
-          class="header__image"
-          src="../image/icon/logo.png"
-          width="62px"
-          height="62px"
-          alt="logo"
-        />
-        <h2 class="header__label">Taxeria</h2>
-      </div>
-      <div class="header__navigationSelect">
-        <img
-          class="header__selectButton"
-          src="../image/icon/navbar.png"
-          onclick="hideSelect()"
-        />
-      </div>
-    </div>
-  </header>
     <main class="main">
       <div class="main__navbar--hidden">
         <a href="../index.html#main" class="main__anchor">Главная</a>
@@ -97,19 +76,58 @@
         <a href="../index.html#contacts" class="main__anchor">Контакты</a>
         <a href="./personalOffise.html" id="user-name"> Maks </a>
       </div>
-       <div class="main__load">
-           <div class="main__container--left">
-           <img class="main__image" src="../image/icon/userAccount.png" alt="userAccount" />
-           <button class="main__button">Загрузить фото</button>
-           </div>
-           <form class="main__form--right">
-            <input class="main__input" placeholder="Имя пользователя"/>
-            <input class="main__input" placeholder="Телефон"/>
-            <input class="main__input" placeholder="Пароль"/>
-            <input class="main__input" placeholder="E-mail"/>
-            <button class="main__button">Сохранить изменения</button>
-           </form>      
-       </div>
+      <div class="table main-history__table">
+        <table class="main-history__table--content">
+          <tr>
+            <th>Номер</th>
+            <th>Дата</th>
+            <th>Водитель</th>
+            <th>Оценка</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>12.10.2010</td>
+            <td>Сергей</td>
+            <td onclick="openModal()">Нет</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10.11.2015</td>
+            <td>Александр</td>
+            <td onclick="openModal()">4/5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>11.01.2017</td>
+            <td>Глеб</td>
+            <td  onclick="openModal()">4/5</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>24.02.2018</td>
+            <td>Евгений</td>
+            <td  onclick="openModal()">3/5</td>
+          </tr>
+        </table>
+      </div>  
+      <div class="modal-window__mark">
+        <h2 class="modal-window__label">Оценка поездки</h2>
+        <div class="rating-area">
+          <input type="radio" id="star-5" name="rating" value="5">
+	        <label for="star-5" title="Оценка «5»"></label>	
+        	<input type="radio" id="star-4" name="rating" value="4">
+        	<label for="star-4" title="Оценка «4»"></label>    
+        	<input type="radio" id="star-3" name="rating" value="3">
+        	<label for="star-3" title="Оценка «3»"></label>  
+        	<input type="radio" id="star-2" name="rating" value="2">
+        	<label for="star-2" title="Оценка «2»"></label>    
+        	<input type="radio" id="star-1" name="rating" value="1">
+        	<label for="star-1" title="Оценка «1»"></label>
+        </div>
+        <p class="modal-window__paragraph">Ваш отзыв</p>
+        <textarea class="modal-window__textarea"></textarea>
+        <button class="modal-window__button" onclick="closeModal()">Оставить оценку</button>
+      </div>
     </main>
     <footer class="footer">
       <h2 class="footer__text">Наши партнеры</h2>
@@ -127,5 +145,6 @@
     </footer>
     <script src="../scrips/script.js"></script>
     <script src="../scrips/autorizate.js"></script>
+    <script src="../scrips/giveMark.js"></script>
 </body>
 </html>

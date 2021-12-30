@@ -12,6 +12,9 @@
             position: relative;
             display: inline;
             top: -25px;
+            @media (max-width: 800px) {
+                font-size: 35px;
+            }
         }
         .main__image {
             width: 100px;

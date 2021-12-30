@@ -66,6 +66,156 @@ button:focus {
   border-right: 2px solid #56433D;
 }
 
+.main__driver {
+  display: none;
+  width: 100%;
+  height: 800px;
+  background-image: url("../image/work.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .main__driver {
+    height: 940px;
+    background-color: #95C8E3;
+    background-image: none;
+  }
+}
+
+.main__driver .work-header {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: #91B4C7;
+}
+
+.main__driver .work-header h2 {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-size: 48px;
+}
+
+.main__driver .work-content {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.main__driver .work-content .work-content-adventuries {
+  float: left;
+  margin-left: 20px;
+  width: 50%;
+  height: 500px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .main__driver .work-content .work-content-adventuries {
+    width: 100%;
+    margin-left: 10px;
+    height: 300px;
+  }
+}
+
+.main__driver .work-content .work-content-adventuries div {
+  float: left;
+}
+
+.main__driver .work-content .work-content-adventuries h2 {
+  color: white;
+  margin: 25px;
+  font-size: 40px;
+  border-bottom: 5px solid #fff;
+}
+
+@media (max-width: 1200px) {
+  .main__driver .work-content .work-content-adventuries h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main__driver .work-content .work-content-adventuries h2 {
+    display: none;
+  }
+}
+
+.main__driver .work-content .work-content-adventuries h3 {
+  color: white;
+  position: relative;
+  top: -46px;
+  font-size: 40px;
+  display: inline;
+}
+
+@media (max-width: 1200px) {
+  .main__driver .work-content .work-content-adventuries h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main__driver .work-content .work-content-adventuries h3 {
+    margin: 10px;
+    color: #000;
+  }
+}
+
+.main__driver .work-content .work-content-form {
+  float: right;
+  width: 40%;
+  height: 500px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .main__driver .work-content .work-content-form {
+    width: 100%;
+    height: 300px;
+    margin-right: 0;
+    margin-top: 130px;
+  }
+}
+
+.main__driver .work-content .work-content-form h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .main__driver .work-content .work-content-form h2 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main__driver .work-content .work-content-form h2 {
+    display: none;
+  }
+}
+
+.main__driver .work-content .work-content-form form {
+  border-radius: 15px;
+  height: 400px;
+  background-color: rgba(145, 180, 199, 0.9);
+}
+
+.main__driver .work-content .work-content-form form button {
+  width: 50%;
+  height: 80px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.main__driver .work-content .work-content-form form p {
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
 .main__admin {
   display: none;
 }

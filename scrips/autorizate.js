@@ -1,4 +1,5 @@
 const admin={name:'admin',password:1111,role:'admin'}
+const driver={name:'driver',password:1111,role:'driver'}
 
 function logIn(){
     let users = JSON.parse(localStorage.getItem('userData') || "[]");
@@ -10,17 +11,23 @@ function logIn(){
         checkUser=true;
         localStorage.setItem('userName', users[i].name);
         checkRole(users[i].role);
-        authorization();
+        // authorization();
         document.location.href = "../index.html";
         break;
         }
-        if(admin.name==loginInput.value && admin.password==passwordInput.value){
-            checkUser=true;
-            localStorage.setItem('userName', admin.name);
-            checkRole(admin.role);
-            authorization();
-            document.location.href = "../index.html";
-        }
+    }
+    if(admin.name==loginInput.value && admin.password==passwordInput.value){
+        checkUser=true;
+        localStorage.setItem('userName', admin.name);
+        checkRole(admin.role);
+        // authorization();
+        document.location.href = "../index.html";
+    }
+    if(driver.name==loginInput.value && driver.password==passwordInput.value){
+        checkUser=true;
+        localStorage.setItem('userName', driver.name);
+        checkRole(driver.role);
+        document.location.href = "../index.html";
     }
     if(!checkUser){
         alert("Вы ввели неверный логин или пароль");
@@ -83,6 +90,25 @@ function driverRegistrate(){
    document.getElementById("p1").innerHTML = localStorage.getItem('userName');
    document.getElementById("user-name").innerHTML = localStorage.getItem('userName');
    }
+/*change page */
+   let role = localStorage.getItem('activeRole');
+   const mainSection = document.querySelector(".main__order");
+   const mainAdmin = document.querySelector(".main__admin");
+   const mainDriver = document.querySelector(".main__driver");
+   const mainWork = document.querySelector(".work");
+   if(role=='admin'){
+       console.log('1');
+     mainSection.style.display="none";  
+     mainAdmin.style.display="block";  
+   }else if(role=='user'){
+       console.log("2");
+       mainSection.style.display="block";  
+       mainAdmin.style.display="none";  
+   }else if(role=='driver'){
+       console.log("3");
+       mainDriver.style.display="block";  
+       mainWork.style.display="none"; 
+   }
 }
 function logOut(){
     localStorage.setItem('userName', '');
@@ -93,21 +119,25 @@ function logOut(){
 window.onload= ()=>{
     authorization();
     changePage();
+    console.log("wind");
 }
 /*change pages*/    
 function changePage(){
+    console.log("start");
     let role = localStorage.getItem('activeRole');
     const mainSection = document.querySelector(".main__order");
     const mainAdmin = document.querySelector(".main__admin");
     console.log(role);
     if(role=='admin'){
-        console.log('work');
-    //   mainSection.style.display="none";  
+        console.log('1');
+      mainSection.style.display="none";  
       mainAdmin.style.display="block";  
     }else if(role=='user'){
+        console.log("2");
         mainSection.style.display="block";  
         mainAdmin.style.display="none";  
     }else if(role=='driver'){
+        console.log("3");
         mainSection.style.display="block";  
         mainAdmin.style.display="none"; 
     }

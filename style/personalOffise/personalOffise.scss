@@ -1,23 +1,26 @@
 .main__container--left{
     float: left;
     background-color:#48758E;
-    width: 25%;
-    margin-left: calc(40% - 200px);
-    margin-top: 170px;
+    width: 50%;
+    display: inline-block;
     .main__image{
+        margin-top: 170px;
         width: 200px;
         height: 200px;
         display: block;
+        margin-left: calc(50% - 100px);
     }
     .main__button{
         margin-top: 20px;
         font-size: 25px;
+        margin-left: calc(50% - 100px);
         display: block;
     }
 }
 .main__form--right{
+    display: inline-block;
     float: right;
-    width: 35%;
+    width: 50%;
     height: 100%;
     background-color: #F8F1E5;
     .main__input{

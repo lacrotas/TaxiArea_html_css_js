@@ -1511,6 +1511,7 @@ button:focus {
 }
 
 .contacts .contacts-content .contacts-content-text-right .social img {
+  cursor: pointer;
   width: 20%;
 }
 
